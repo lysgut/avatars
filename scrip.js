@@ -16,8 +16,3 @@ function txt3() {
     let d = document.getElementById("alien-age").innerHTML = b; 
 }
 
-function imga() {
-    while(1>0){
-    let a = "https://api.minimalavatars.com/avatar/random/png"
-    let b = document.getElementById("imgalien").src = a}
-}
