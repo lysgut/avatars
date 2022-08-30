@@ -12,7 +12,12 @@ function txt2() {
     let d = document.getElementById("alien-name").innerHTML = c; 
 }
 function txt3() {
-    let b = Math.floor(Math.random() * 800);
+    let b = "age: "+ Math.floor(Math.random() * 800);
     let d = document.getElementById("alien-age").innerHTML = b; 
+}
+
+function caripela() {
+    let b = "https://api.minimalavatars.com/avatar/random/png"
+    let d = documen.getElementById("imgalien").innerHTML.src = b;
 }
 
