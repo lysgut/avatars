@@ -20,10 +20,10 @@ function txt() {
     else {
         planet = planets[ini]
     }
-    let fulbo = ["River Plate", "River Planet, el mejor hincha"]
+    let fulbo = ["River Plate", "River Plate, el mejor hincha"]
     let riverso;
     let nombrex = names[ini][random(5)]
-    if(nombrex = "Hector R. García") {
+    if(nombrex == "Hector R. García") {
         riverso = fulbo[1]
     }
     else{
@@ -41,8 +41,8 @@ function txt() {
     document.getElementById("category1").innerHTML = categoris[ini];
     document.getElementById("TITLEASSO").innerHTML = "Asociación";
     document.getElementById("asss").innerHTML = assos[ini];
-    document.getElementById("TITTLEFUTBOL").innerHTML = "Hincha de";
-    document.getElementById("siin").innerHTML = fulbo;
+    document.getElementById("TITLEFUTBOL").innerHTML = "Hincha de";
+    document.getElementById("siin").innerHTML = riverso;
     document.getElementById("deski").innerHTML = "Descripción:"
     document.getElementById("deskiasi").innerHTML = 3
 
