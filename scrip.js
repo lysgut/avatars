@@ -5,11 +5,12 @@ function txt() {
     let river = riverarray[Math.floor(Math.random() * riverarray.length)];
     let ini = random(8)
     let ages = [random(80) + " años", random(160) + " dias", random(14) + " B. de años", "Infinity", random(500) + " años", random(40) + " siglos", random(800) + " siglos", random(500) + " años", random(10) + " meses"]
-    let categoris = ["Humano", "Legum", "Universal", "Dios", "Piórodo", "SpacialRex", "Comedor de Almas", "FEx-9000", "Weruga"]
-    let assos = ["SpaceX HumanBeings", "Liitleplot A.S", "Gremio Obrero Galactico", "Ministerio de Deidades", "Ankara, inc.", "Rex Descendent As.", "P.A.I.cor (Programa de Almas Integral de ComedOR", "Lab_2000", "One for All, Middle Universe"]
-    let names = [["Juan Cruz", "Julia", "Hector R. García", "Donald Trump", "Hilary", "Ana"], ["Porot", "Soy", "Lent", "Manie", "Garb", "Arb"], ["H2O", "NaCl", "CH3(CH2)16COOH", "CaCO3", "CO2", "C2H6"], ["Zeus", "Poseidon", "Hades", "Demeter", "Hera", "Hestia"], ["Obluf", "Eksab", "Log", "Ielob", "Sese", "Jojo"], ["Stego", "Rexy", "Tricerat", "Vlocir", "Loops", "Lecter"], ["SS Valencia", "Ourang Medan", "Caroll A. Deering", "Baychimo", "Octavius", "Lady Lovibond"], "X-" + random(300), ["Werug", "Wermi", "Apicula", "mWesca", "Aran", "Alan"]]
-    let planets = [["Tierra", "Marte"], ["Vegetta", "Willy", "Esternocleido"], "Laburan en las estrellas", "Viven fuera del Universo", ["Kromi", "Lomes", "Atenea"], ["Jurasic Planet", "Triasic Planet", "Cretasic Planet"] ,"Vagan de Planeta en Planeta" , "BckRms("+random(16)+")" ,"Weruga Planet"]
-    let descricpiones = []
+    let categoris = ["Humano", "Legum", "Compunivy", "Dios", "Piórodo", "SpacialDino", "Comedor de Almas", "FEx-9000", "Weruga"]
+    let assos = ["SpaceX HumanBeings", "Litleplot Legum A.S", "Gremio Obrero Universal Compunivies (G.O.U.C)", "Ministerio de Deidades", "Ankara, inc. Piórodo & CO.", "Dino Descendent SAS", "P.A.I.cor (Programa de Almas Integral de ComedOR)", "Lab_2000@space.lol", "One for All, Middle Weuga Universe(14ALL-mwu)"]
+    let names = [["Juan Cruz", "Julia", "Hector R. García", "Donald Trump", "Hilary", "Ana"], ["Porot", "Soy", "Lent", "Manie", "Garb", "Arb"], ["H2O", "NaCl", "CH3(CH2)16COOH", "CaCO3", "CO2", "C2H6"], ["Zeus", "Poseidon", "Hades", "Demeter", "Hera", "Hestia"], ["Obluf", "Eksab", "Log", "Yelob", "Sese", "Jojo"], ["Stego", "Rexy", "Tricerat", "Vlocir", "Loops", "Lecter"], ["SS Valencia", "Ourang Medan", "Caroll A. Deering", "Baychimo", "Octavius", "Lady Lovibond"], "X-", ["Werug", "Wermi", "Apicula", "mWesca", "Aran", "Alan"]]
+    let planets = [["Tierra", "Marte"], ["Vegetta", "Willy", "Esternocleido"], "Laburan en las estrellas", "Viven fuera del Universo", ["Kromi", "Lomes", "Atenea"], ["Jurasic Planet", "Triasic Planet", "Cretasic Planet"] ,"Vagan de Planeta en Planeta" , "BckRms-"+random(160) ,"Weruga Planet"]
+    let descripts = [["","","","","",""],["","","","","",""],["","","","","",""],["","","","","",""],["","","","","",""],["","","","","",""],["","","","","",""],["","","","","",""],["","","","","",""]]
+    let descript = descripts[ini][varnyd]
     let planet;
     if(ini == 0){
         planet = planets[ini][random(1)]
@@ -22,13 +23,22 @@ function txt() {
     }
     let fulbo = ["River Plate", "River Plate, el mejor hincha"]
     let riverso;
-    let nombrex = names[ini][random(5)]
+    let nombrex;
+    let varnyd = random(5)
+    if(ini == 7){
+        nombrex = "X-" + random(800);
+    }
+    else{
+    nombrex = names[ini][varnyd]
+    }
+
     if(nombrex == "Hector R. García") {
         riverso = fulbo[1]
     }
     else{
         riverso = fulbo[0]
     }
+
     document.getElementById("imgriver").src = river;
     document.getElementById("imgalien").src = img;
     document.getElementById("TITLENAME").innerHTML = "Nombre:";
@@ -37,14 +47,14 @@ function txt() {
     document.getElementById("alien-age").innerHTML = ages[ini];
     document.getElementById("TITLEPLANET").innerHTML = "Planeta:";
     document.getElementById("alien-planet").innerHTML = planet;
-    document.getElementById("TITLERAZA").innerHTML = "Categoria";
+    document.getElementById("TITLERAZA").innerHTML = "Categoria:";
     document.getElementById("category1").innerHTML = categoris[ini];
-    document.getElementById("TITLEASSO").innerHTML = "Asociación";
+    document.getElementById("TITLEASSO").innerHTML = "Asociación:";
     document.getElementById("asss").innerHTML = assos[ini];
-    document.getElementById("TITLEFUTBOL").innerHTML = "Hincha de";
+    document.getElementById("TITLEFUTBOL").innerHTML = "Hincha de:";
     document.getElementById("siin").innerHTML = riverso;
     document.getElementById("deski").innerHTML = "Descripción:"
-    document.getElementById("deskiasi").innerHTML = 3
+    document.getElementById("deskiasi").innerHTML = descript;
 
 }
 
