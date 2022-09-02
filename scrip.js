@@ -129,7 +129,7 @@ function txt2(){
     if(raz[1] == "Compunivy"){
         ino = 2
     }
-    if(raz[0] == "Dios"){
+    if(raz[1] == "Dios"){
         ino = 3
     }
     if(raz[1] == "Piorodo"){
@@ -183,18 +183,21 @@ function txt2(){
     document.getElementById("comedor").innerHTML = ps[2] + "%"
     document.getElementById("fex").innerHTML = ps[1] + "%"
     document.getElementById("weruga").innerHTML = ps[0] + "%"
-    document.getElementById("h%").innerHTML =raz[0]
-    document.getElementById("l%").innerHTML =raz[1]
-    document.getElementById("p%").innerHTML =raz[2]
-    document.getElementById("d%").innerHTML =raz[3]
-    document.getElementById("c%").innerHTML =raz[4]
-    document.getElementById("s%").innerHTML =raz[5]
-    document.getElementById("co%").innerHTML =raz[6]
-    document.getElementById("f%").innerHTML =raz[7]
-    document.getElementById("w%").innerHTML =raz[8]
+    document.getElementById("h%").innerHTML = raz[0]
+    document.getElementById("l%").innerHTML = raz[1]
+    document.getElementById("p%").innerHTML = raz[2]
+    document.getElementById("d%").innerHTML = raz[3]
+    document.getElementById("c%").innerHTML = raz[4]
+    document.getElementById("s%").innerHTML = raz[5]
+    document.getElementById("co%").innerHTML = raz[6]
+    document.getElementById("f%").innerHTML = raz[7]
+    document.getElementById("w%").innerHTML = raz[8]
     document.getElementById("imgraz").src = razimg[ini]
     document.getElementById("imgraz2").src = razimg[ino]
     document.getElementById("imgraz3").src = razimg[inu]
+    document.getElementById("titleraz").innerHTML = "Tu raza es: " + raz[0] + " en un " + ps[8] + "%"
+    document.getElementById("titleraz2").innerHTML = "En 2do Lugar: " + raz[1] + " en un " + ps[7] + "%"
+    document.getElementById("titleraz3").innerHTML = "En 3er lugar : " + raz[2] + " en un " + ps[6] + "%"
 
     
 }
