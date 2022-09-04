@@ -174,7 +174,7 @@ function txt2(){
     if(raz[2] == "Weruga"){
         inu = 8
     }
-    let descris = 
+    let descris = []
     document.getElementById("humano").innerHTML = ps[8] + "%"
     document.getElementById("legum").innerHTML = ps[7] + "%"
     document.getElementById("piorodo").innerHTML = ps[6] + "%"
