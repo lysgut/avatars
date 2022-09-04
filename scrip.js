@@ -174,6 +174,7 @@ function txt2(){
     if(raz[2] == "Weruga"){
         inu = 8
     }
+    let descris = 
     document.getElementById("humano").innerHTML = ps[8] + "%"
     document.getElementById("legum").innerHTML = ps[7] + "%"
     document.getElementById("piorodo").innerHTML = ps[6] + "%"
@@ -198,6 +199,10 @@ function txt2(){
     document.getElementById("titleraz").innerHTML = "Tu raza es: " + raz[0] + " en un " + ps[8] + "%"
     document.getElementById("titleraz2").innerHTML = "En 2do Lugar: " + raz[1] + " en un " + ps[7] + "%"
     document.getElementById("titleraz3").innerHTML = "En 3er lugar : " + raz[2] + " en un " + ps[6] + "%"
+    document.getElementById("descripraz").innerHTML = descris[ini];
+    document.getElementById("descripraz2").innerHTML = descris[ino];
+    document.getElementById("descripraz3").innerHTML = descris[inu];
+
 
     
 }
